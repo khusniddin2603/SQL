@@ -13,13 +13,16 @@ CREATE TABLE products (
     availability TEXT,
     internal_id INT
 )
-SELECT *
+SELECT 
+    AVG(price) AS average_price
+FROM products
+
+SELECT 
 FROM products
 
 ALTER TABLE products
 ALTER COLUMN color TYPE TEXT
 USING color::TEXT;
-
 
 
 
