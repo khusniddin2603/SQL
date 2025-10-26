@@ -17,7 +17,12 @@ SELECT
     AVG(price) AS average_price
 FROM products
 
-SELECT 
+SELECT *
+    --DISTINCT(availability)
+FROM products
+WHERE availability='pre_order' AND size='M'
+
+SELECT *
 FROM products
 
 ALTER TABLE products
